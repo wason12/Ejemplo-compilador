@@ -1,0 +1,396 @@
+#source "input.txt"
+
+	 ' * ArrayType[of:RealType],size:10] v (offset 0)
+
+
+	 ' * Llamando a la funcion main
+call main
+halt
+
+#line 4
+
+main:
+	 ' * --Parametros--
+	 ' * --Variables Locales--
+	 ' * RealType value (offset -4)
+	 ' * IntType i (offset -6)
+	 ' * IntType j (offset -8)
+	 ' * ArrayType[of:ArrayType[of:IntType],size:5]],size:4] w (offset -48)
+	 ' * RecordType[fields:[Field:[name:day, type:IntType offset:0], Field:[name:month, type:IntType offset:2], Field:[name:year, type:IntType offset:4]]] date (offset -54)
+	enter 54
+
+#line 12
+
+	push bp
+	pushi -54
+	addi
+	pushi 0
+	addi
+	ini
+	storei
+
+#line 13
+
+	push bp
+	pushi -54
+	addi
+	pushi 4
+	addi
+	pushb 97
+	b2i
+	storei
+
+#line 14
+
+	push bp
+	pushi -54
+	addi
+	pushi 2
+	addi
+	push bp
+	pushi -54
+	addi
+	pushi 0
+	addi
+	loadi
+	push bp
+	pushi -54
+	addi
+	pushi 4
+	addi
+	loadi
+	muli
+	pushi 12
+	modi
+	pushi 1
+	addi
+	storei
+
+#line 15
+
+	push bp
+	pushi -54
+	addi
+	pushi 0
+	addi
+	loadi
+	outi
+
+#line 15
+
+	pushb 10
+	outb
+
+#line 15
+
+	push bp
+	pushi -54
+	addi
+	pushi 2
+	addi
+	loadi
+	outi
+
+#line 15
+
+	pushb 10
+	outb
+
+#line 15
+
+	push bp
+	pushi -54
+	addi
+	pushi 4
+	addi
+	loadi
+	i2f
+	outf
+
+#line 15
+
+	pushb 10
+	outb
+
+#line 17
+
+	push bp
+	pushi -4
+	addi
+	inf
+	storef
+
+#line 19
+
+	push bp
+	pushi -6
+	addi
+	pushi 0
+	storei
+
+#line 20
+
+principioWhile0:
+	push bp
+	pushi -6
+	addi
+	loadi
+	pushi 10
+	lti
+	jz finWhile1
+
+#line 21
+
+	pusha 0
+	push bp
+	pushi -6
+	addi
+	loadi
+	pushi 4
+	muli
+	addi
+	push bp
+	pushi -4
+	addi
+	loadf
+	storef
+
+#line 22
+
+	push bp
+	pushi -6
+	addi
+	loadi
+	outi
+
+#line 22
+
+	pushb 58
+	outb
+
+#line 22
+
+	pusha 0
+	push bp
+	pushi -6
+	addi
+	loadi
+	pushi 4
+	muli
+	addi
+	loadf
+	outf
+
+#line 22
+
+	pushb 32
+	outb
+
+#line 23
+
+	push bp
+	pushi -6
+	addi
+	loadi
+	pushi 2
+	modi
+	jz elseBody2
+
+#line 24
+
+	pushb 111
+	outb
+
+#line 24
+
+	pushb 100
+	outb
+
+#line 24
+
+	pushb 100
+	outb
+
+#line 24
+
+	pushb 10
+	outb
+	jmp finIf3
+elseBody2:
+
+#line 26
+
+	pushb 101
+	outb
+
+#line 26
+
+	pushb 118
+	outb
+
+#line 26
+
+	pushb 101
+	outb
+
+#line 26
+
+	pushb 110
+	outb
+
+#line 26
+
+	pushb 10
+	outb
+finIf3:
+
+#line 27
+
+	push bp
+	pushi -6
+	addi
+	push bp
+	pushi -6
+	addi
+	loadi
+	pushi 1
+	addi
+	storei
+	jmp principioWhile0
+finWhile1:
+
+#line 29
+
+	pushb 10
+	outb
+
+#line 31
+
+	push bp
+	pushi -6
+	addi
+	pushi 0
+	storei
+
+#line 32
+
+principioWhile4:
+	push bp
+	pushi -6
+	addi
+	loadi
+	pushi 4
+	lti
+	jz finWhile5
+
+#line 33
+
+	push bp
+	pushi -8
+	addi
+	pushi 0
+	storei
+
+#line 34
+
+principioWhile6:
+	push bp
+	pushi -8
+	addi
+	loadi
+	pushi 5
+	lti
+	jz finWhile7
+
+#line 35
+
+	push bp
+	pushi -48
+	addi
+	push bp
+	pushi -6
+	addi
+	loadi
+	pushi 10
+	muli
+	addi
+	push bp
+	pushi -8
+	addi
+	loadi
+	pushi 2
+	muli
+	addi
+	push bp
+	pushi -6
+	addi
+	loadi
+	push bp
+	pushi -8
+	addi
+	loadi
+	addi
+	storei
+
+#line 36
+
+	push bp
+	pushi -48
+	addi
+	push bp
+	pushi -6
+	addi
+	loadi
+	pushi 10
+	muli
+	addi
+	push bp
+	pushi -8
+	addi
+	loadi
+	pushi 2
+	muli
+	addi
+	loadi
+	outi
+
+#line 36
+
+	pushb 32
+	outb
+
+#line 37
+
+	push bp
+	pushi -8
+	addi
+	push bp
+	pushi -8
+	addi
+	loadi
+	pushi 1
+	addi
+	storei
+	jmp principioWhile6
+finWhile7:
+
+#line 39
+
+	pushb 10
+	outb
+
+#line 40
+
+	push bp
+	pushi -6
+	addi
+	push bp
+	pushi -6
+	addi
+	loadi
+	pushi 1
+	addi
+	storei
+	jmp principioWhile4
+finWhile5:
+	ret 0, 54, 0
