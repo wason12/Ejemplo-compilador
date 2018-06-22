@@ -1,0 +1,8 @@
+/ast/
+/codeGenerator/
+/errorhandler/
+/main/
+/parser/
+/scanner/
+/symboltable/
+/visitor/
